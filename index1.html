@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Flowbite CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  
+
+
+  <style>
+
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+.animate-fade-in-delay {
+  animation: fadeInUp 1.3s ease-out forwards;
+}
+.animate-fade-in-delay-2 {
+  animation: fadeInUp 1.6s ease-out forwards;
+}
+
+
+@keyframes popUp {
+    0% {
+      transform: translateY(-40px) scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-pop-up {
+    animation: popUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .delay-\[100ms\]  { animation-delay: 0.1s; }
+  .delay-\[200ms\]  { animation-delay: 0.2s; }
+  .delay-\[300ms\]  { animation-delay: 0.3s; }
+  .delay-\[400ms\]  { animation-delay: 0.4s; }
+  .delay-\[500ms\]  { animation-delay: 0.5s; }
+
+
+
+
+
+
+</style>
+
+
+    
+
+  <!-- Optional Tailwind Config -->
+</head>
+
+<body  >
+  <!-- 🔷 Top Contact Bar - Horizontal Layout -->
+  <div class="bg-purple-700 text-white py-1 px-1 md:pr-20 ">
+    <div class="max-w-7xl mx-auto flex justify-end">
+      <div class="flex items-center space-x-6 text-sm">
+
+        <!-- 📞 Admin Contact -->
+        <div class="flex items-center space-x-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-300" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h2l2 5-2 2a16 16 0 006 6l2-2 5 2v2a2 2 0 01-2 2h-1C9.4 21 3 14.6 3 7V5z" />
+          </svg>
+          <span class="font-semibold">+91 63832 18808</span>
+        </div>
+
+        <!-- 📧 Support Email -->
+        <div class="flex items-center space-x-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-300" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z" />
+          </svg>
+          <span class="font-semibold">support@example.com</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Nva bar start -->
+
+  <nav class="bg-white border-b border-purple-700 shadow-md shadow-purple-500">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-6 py-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="./LogoNew.webp" class="h-11" alt="Flowbite Logo" />
+      </a>
+
+      <button data-collapse-toggle="navbar-multi-level" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        aria-controls="navbar-multi-level" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+
+      <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+        <ul
+          class="flex flex-col text-black font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+          <li>
+            <a href="#" class="relative inline-block px-6 py-2 text-sm font-semibold text-purple-700 
+                     bg-white border border-purple-700 rounded-full shadow-md 
+                     transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] 
+                     hover:bg-purple-700 hover:text-white 
+                     hover:border-transparent 
+                     hover:shadow-lg hover:ring hover:ring-purple-700 hover:ring-offset-1 
+                     focus:outline-none focus:ring-2 focus:ring-fuchsia-700 
+                     active:scale-95 active:shadow-inner">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="relative inline-block px-6 py-2 text-sm font-semibold text-purple-700 
+              bg-white border border-purple-700 rounded-full shadow-md 
+              transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] 
+              hover:bg-purple-700 hover:text-white 
+              hover:border-transparent 
+              hover:shadow-lg hover:ring hover:ring-purple-700 hover:ring-offset-1 
+              focus:outline-none focus:ring-2 focus:ring-fuchsia-700 
+              active:scale-95 active:shadow-inner">
+              Courses
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="relative inline-block px-6 py-2 text-sm font-semibold text-purple-700 
+              bg-white border border-purple-700 rounded-full shadow-md 
+              transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] 
+              hover:bg-purple-700 hover:text-white 
+              hover:border-transparent 
+              hover:shadow-lg hover:ring hover:ring-purple-700 hover:ring-offset-1 
+              focus:outline-none focus:ring-2 focus:ring-fuchsia-700 
+              active:scale-95 active:shadow-inner">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="relative inline-block px-6 py-2 text-sm font-semibold text-purple-700 
+              bg-white border border-purple-700 rounded-full shadow-md 
+              transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] 
+              hover:bg-purple-700 hover:text-white 
+              hover:border-transparent 
+              hover:shadow-lg hover:ring hover:ring-purple-700 hover:ring-offset-1 
+              focus:outline-none focus:ring-2 focus:ring-fuchsia-700 
+              active:scale-95 active:shadow-inner">
+              Contact
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#" class="relative inline-block px-6 py-2 text-sm font-semibold text-purple-700 
+              bg-white border border-purple-700 rounded-full shadow-md 
+              transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] 
+              hover:bg-purple-700 hover:text-white 
+              hover:border-transparent 
+              hover:shadow-lg hover:ring hover:ring-purple-700 hover:ring-offset-1 
+              focus:outline-none focus:ring-2 focus:ring-fuchsia-700 
+              active:scale-95 active:shadow-inner">
+              Career
+            </a>
+          </li>
+
+
+
+
+
+
+
+
+
+
+          <!-- Search Button -->
+          <div class="relative w-full flex justify-end items-center">
+            <button type="button" id="toggleSearch" aria-label="Search" class="p-2 text-purple-700 hover:text-white bg-white border border-purple-700
+                       rounded-full shadow-md transition-all duration-300 ease-in-out 
+                       hover:bg-purple-700 hover:shadow-lg focus:outline-none 
+                       focus-visible:ring-2 focus-visible:ring-fuchsia-500 active:scale-95 active:shadow-inner">
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+            </button>
+          </div>
+
+
+          <!-- Fullscreen Search Modal -->
+          <div id="searchOverlay"
+            class="hidden fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50">
+            <form id="searchForm" class="w-11/12 max-w-lg bg-white px-6 py-5 rounded-2xl shadow-2xl">
+              <div class="relative">
+                <input type="text" placeholder="Search ..."
+                  class="w-full pl-12 pr-4 py-3 text-base text-black bg-gray-100 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white"
+                  autofocus />
+                <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                </svg>
+              </div>
+            </form>
+          </div>
+      </div>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Nva bar end -->
+  <section class="bg-purple-50 mt-2 px-6 md:px-16 py-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6 text-center md:text-left">
+        <!-- Main Heading -->
+        <h1 class="text-left text-gray-900 text-5xl font-extrabold  md:text-5xl font-extrabold  text-gray-900 animate-fade-in-up leading-tight">
+          Redefine Your Career with <span class="text-purple-600">Advanced AI</span>
+        </h1>
+        
+        <!-- Subheading -->
+        <p class="text-base sm:text-lg text-left md:text-xl text-gray-500 animate-fade-in-delay leading-relaxed">
+          Master <span class="text-purple-500 font-semibold">ML, DL, NLP, TSA, Gen AI, RAG, Agentic AI</span> — All in One Cutting-Edge Program Built for 2025 and Beyond.
+        </p>
+
+         <!-- New Text Content (at the end) -->
+         <p class="text-base sm:text-lg text-left md:text-xl text-gray-600 animate-fade-in-delay leading-relaxed">
+            Attention IT-Professionals, Non-IT Professionals, Career Restarters & Freshers/Jobseekers
+          </p>
+      
+        <!-- Call to Action -->
+        <div class=" animate-fade-in-delay-2 text-left ">
+          <a href="#enroll" class="inline-block bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition shadow-md">
+            Get Started Now
+          </a>
+        </div>
+      
+       
+      </div>
+  
+      <!-- Right: Circular Image Container -->
+      <div class="flex justify-center md:justify-end animate-fade-in-up">
+        <!-- Outer Light Purple Circle -->
+        <div class="relative w-64 h-64 sm:w-96 sm:h-96 md:w-[22rem] md:h-[22rem] lg:w-[26rem] lg:h-[26rem] rounded-full bg-purple-200 shadow-[0_0_25px_rgba(168,85,247,0.4)] flex items-center justify-center border-2 border-purple-300">
+          
+          <!-- Inner Darker Purple Circle -->
+          <div class=" w-56 h-56 sm:w-80 sm:h-80 md:w-[18rem] md:h-[18rem] lg:w-[22rem] lg:h-[22rem] rounded-full bg-purple-400 shadow-[0_0_20px_rgba(126,34,206,0.6)] flex items-center justify-center border-1 border-purple-500">
+          
+            <div class="flex flex-col items-center space-y-4 mb-20">
+              <!-- Image with name overlay -->
+              <div class="relative w-40 sm:w-48 md:w-56 lg:w-64">
+                <img 
+                  src="./full.png" 
+                  alt="AI Instructor" 
+                  class="w-full h-auto object-contain rounded-3xl shadow-md"
+                />
+                
+                <!-- Name overlay at bottom center -->
+                <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-purple-500/40 text-white text-center px-3 py-1 rounded-full text-base sm:text-xl md:text-xl font-medium border border-purple-800 shadow-inner backdrop-blur-md">
+                  Ramish_Rain_K
+                </div>
+              </div>
+            
+              <!-- Social icons -->
+              <div class="flex space-x-5 justify-center items-center">
+                <!-- GitHub -->
+                <a href="#" target="_blank" class="text-gray-800 dark:text-white hover:text-purple-700">
+                  <svg class="w-9 h-9 md:w-10 md:h-10" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
+                  </svg>
+                </a>
+            
+                <!-- LinkedIn -->
+                <a href="#" target="_blank" class=" text-gray-800 dark:text-white hover:text-blue-600">
+                  <svg class="w-9 h-9 md:w-10 h-10 " xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
+                    <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                  </svg>
+                </a>
+            
+                <!-- Instagram -->
+                <a href="#" target="_blank" class="text-gray-800 dark:text-white hover:text-pink-500">
+                  <svg class=" w-9 h-9 md:w-10 md:h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            
+          
+  
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Include Tailwind + Animate.css or use Tailwind's animation classes -->
+<!-- If not already included, make sure Tailwind's animation plugin is active -->
+
+<div class="max-w-7xl mx-auto mt-10 p-6 bg-purple-600 rounded-2xl shadow-2xl border border-purple-300">
+  <div class="flex flex-col sm:flex-row justify-between items-center text-center text-white font-bold">
+
+    <!-- Total Learners -->
+    <div class="px-6 py-4 rounded-full shadow-lg animate-pop-up delay-[100ms]">
+      <h2 class="text-4xl">1200+</h2>
+      <p class="text-lg mt-2">Total Learners</p>
+    </div>
+
+    <!-- Vertical line -->
+    <div class="hidden sm:block w-px h-24 bg-white"></div>
+
+    <!-- Non-IT -->
+    <div class="px-6 py-4 rounded-full shadow-lg animate-pop-up delay-[200ms]">
+      <h2 class="text-3xl">600+</h2>
+      <p class="text-lg mt-2">Non-IT</p>
+    </div>
+
+    <!-- Vertical line -->
+    <div class="hidden sm:block w-px h-24 bg-white"></div>
+
+    <!-- IT -->
+    <div class="px-6 py-4 rounded-full shadow-lg animate-pop-up delay-[300ms]">
+      <h2 class="text-3xl">200+</h2>
+      <p class="text-lg mt-2">IT</p>
+    </div>
+
+    <!-- Vertical line -->
+    <div class="hidden sm:block w-px h-24 bg-white"></div>
+
+    <!-- Career Restart -->
+    <div class="px-6 py-4 rounded-full shadow-lg animate-pop-up delay-[400ms]">
+      <h2 class="text-3xl">200+</h2>
+      <p class="text-lg mt-2">Career Restart</p>
+    </div>
+
+    <!-- Vertical line -->
+    <div class="hidden sm:block w-px h-24 bg-white"></div>
+
+    <!-- Student/Fresher -->
+    <div class="px-6 py-4 rounded-full shadow-lg animate-pop-up delay-[500ms]">
+      <h2 class="text-3xl">200+</h2>
+      <p class="text-lg mt-2">Student / Fresher</p>
+    </div>
+
+  </div>
+</div>
+
+    
+  </section>
+
+  <!-- vedio section -->
+
+  <section class="max-w-7xl  mx-auto px-6 py-16">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+      
+      <!-- Left Text Content -->
+      <div class="w-full md:w-1/2 space-y-6">
+        <h2 class="text-5xl font-extrabold text-purple-700 leading-tight md:text-5xl font-extrabold text-purple-700 leading-tight">
+          Who all can attend this?
+        </h2>
+        <p class="text-2xl text-gray-800 font-semibold">
+          Your Skill <span class="text-purple-600 font-extrabold">+ AI Skill</span> = <span class="text-purple-700 text-2xl font-black">3X Hike</span>
+        </p>
+        <p class="text-lg text-gray-600">
+          <span class="font-bold text-purple-700">ZERO TO HERO</span>AI Expert Strategies for <br />
+          <span class="font-semibold text-black">Freshers & Working Professionals</span>
+        </p>
+          <!-- Register Button -->
+      <button class="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-purple-700 hover:bg-purple-800 text-white text-lg font-semibold rounded-xl shadow-lg transition duration-300 ease-in-out">
+        <svg class="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+        </svg>
+        Register Webinar
+      </button>
+
+      </div>
+  
+      <!-- Right Video Embed -->
+      <div class="w-full md:w-1/2">
+        <div class="aspect-w-16 aspect-h-9 rounded-2xl shadow-2xl overflow-hidden border border-purple-300">
+          <iframe 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            title="AI Webinar Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen 
+            class="w-full h-full md:h-64">
+          </iframe>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- feedback cloures -->
+
+  <section class="w-full mx-auto  px-6 py-16 bg-purple-50">
+    <div class="flex flex-col md:flex-row max-w-7xl mx-auto items-center justify-center gap-10">
+
+      <h2 class=" text-5xl font-extrabold text-purple-700 leading-tight md:hidden ">Feedback!</h2>
+  
+      <!-- Left: Carousel (Flowbite style enhanced) -->
+      <div class="w-full md:w-1/2">
+        <div id="carouselExample" class="relative w-full" data-carousel="slide">
+          
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 md:h-64 overflow-hidden rounded-xl shadow-2xl">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="https://source.unsplash.com/featured/?happy,student" class="absolute block w-full h-full object-cover" alt="student">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="https://source.unsplash.com/featured/?training,tech" class="absolute block w-full h-full object-cover" alt="tech">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="https://source.unsplash.com/featured/?office,success" class="absolute block w-full h-full object-cover" alt="success">
+            </div>
+          </div>
+  
+          <!-- Slider controls -->
+          <button type="button" class="absolute top-1/2 left-4 z-30 -translate-y-1/2 flex items-center justify-center w-9 h-9 rounded-full bg-purple-700 text-white hover:bg-purple-800 shadow-md" data-carousel-prev>
+            ‹
+          </button>
+          <button type="button" class="absolute top-1/2 right-4 z-30 -translate-y-1/2 flex items-center justify-center w-9 h-9 rounded-full bg-purple-700 text-white hover:bg-purple-800 shadow-md" data-carousel-next>
+            ›
+          </button>
+        </div>
+      </div>
+  
+      <!-- Right: Text Content -->
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2 class="text-2xl md:text-5xl font-extrabold text-purple-700 leading-tight">Feedback!</h2>
+        <br>
+        <p class="text-2xl text-gray-800 font-semibold">
+          You are not the <span class="text-purple-800 text-xl">first person</span>  to attend this <span class="text-purple-800 text-xl">Webinar</span>.
+        </p>
+        <p class="mt-2 text-gray-600">
+          Hear from students and professionals who transformed their careers using our AI-powered learning.
+        </p>
+  
+        <!-- Register Button -->
+      <button class="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-purple-700 hover:bg-purple-800 text-white text-lg font-semibold rounded-xl shadow-lg transition duration-300 ease-in-out">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg>
+        Register Webinar
+      </button>
+  
+    </div>
+  </section>
+
+  <!-- webinor -->
+
+  <section class="w-full bg-white py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center mb-16 ">
+      <h2 class="text-5xl font-extrabold text-purple-700 leading-tight mb-4 md:text-5xl font-extrabold  ">What you will learn in the <br> <span class="text-black">3-Hours?</span></h2>
+    </div>
+  
+    <div class="relative border-l-4 border-purple-600 pl-6 space-y-12 max-w-3xl mx-auto">
+  
+      <!-- 1 -->
+      <div class="relative">
+        <div class="absolute -left-3 top-1 w-6 h-6 bg-purple-600 border-4 border-white rounded-full shadow-lg"></div>
+        <div class="bg-purple-50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-purple-300">
+          <h3 class="font-semibold text-purple-700 text-xl">Difference Between AI vs DS vs Gen AI</h3>
+        </div>
+      </div>
+  
+      <!-- 2 -->
+      <div class="relative">
+        <div class="absolute -left-3 top-1 w-6 h-6 bg-purple-600 border-4 border-white rounded-full shadow-lg"></div>
+        <div class="bg-purple-50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-purple-300">
+          <h3 class="font-semibold text-purple-700 text-xl">My Secret Formula to integrate AI into your Existing Project</h3>
+        </div>
+      </div>
+  
+      <!-- 3 -->
+      <div class="relative">
+        <div class="absolute -left-3 top-1 w-6 h-6 bg-purple-600 border-4 border-white rounded-full shadow-lg"></div>
+        <div class="bg-purple-50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-purple-300">
+          <h3 class="font-semibold text-purple-700 text-xl">How to select domain (ML, DL, NLP, DS, Gen AI) for a Project?</h3>
+        </div>
+      </div>
+  
+      <!-- 4 -->
+      <div class="relative">
+        <div class="absolute -left-3 top-1 w-6 h-6 bg-purple-600 border-4 border-white rounded-full shadow-lg"></div>
+        <div class="bg-purple-50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-purple-300">
+          <h3 class="font-semibold text-purple-700 text-xl">Traditional Way vs AI Way</h3>
+        </div>
+      </div>
+  
+      <!-- 5 -->
+      <div class="relative">
+        <div class="absolute -left-3 top-1 w-6 h-6 bg-purple-600 border-4 border-white rounded-full shadow-lg"></div>
+        <div class="bg-purple-50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-purple-300">
+          <h3 class="font-semibold text-purple-700 text-xl">Learn to integrate AI into any Departments</h3>
+        </div>
+      </div>
+  
+      <!-- 6 -->
+      <div class="relative">
+        <div class="absolute -left-3 top-1 w-6 h-6 bg-purple-600 border-4 border-white rounded-full shadow-lg"></div>
+        <div class="bg-purple-50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-purple-300">
+          <h3 class="font-semibold text-purple-700 text-xl">Get a chance to book 1:1 call in the webinar</h3>
+        </div>
+      </div>
+  
+      <!-- 7 -->
+      <div class="relative">
+        <div class="absolute -left-3 top-1 w-6 h-6 bg-purple-600 border-4 border-white rounded-full shadow-lg"></div>
+        <div class="bg-purple-50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-purple-300">
+          <h3 class="font-semibold text-purple-700 text-xl">Learn to write 10+ AI Applications</h3>
+        </div>
+      </div>
+  
+      <!-- 8 -->
+      <div class="relative">
+        <div class="absolute -left-3 top-1 w-6 h-6 bg-purple-600 border-4 border-white rounded-full shadow-lg"></div>
+        <div class="bg-purple-50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-purple-300">
+          <h3 class="font-semibold text-purple-700 text-xl">Understand working principle by Live Demo of AI Projects</h3>
+        </div>
+      </div>
+  
+      <!-- 9 -->
+      <div class="relative">
+        <div class="absolute -left-3 top-1 w-6 h-6 bg-purple-600 border-4 border-white rounded-full shadow-lg"></div>
+        <div class="bg-purple-50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-purple-300">
+          <h3 class="font-semibold text-purple-700 text-xl">How to learn AI and DS without Maths Knowledge​</h3>
+        </div>
+      </div>
+  
+      <!-- 10 -->
+      <div class="relative">
+        <div class="absolute -left-3 top-1 w-6 h-6 bg-purple-600 border-4 border-white rounded-full shadow-lg"></div>
+        <div class="bg-purple-50 p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-purple-300">
+          <h3 class="font-semibold text-purple-700 text-xl">5 Step Proven Strategies to get into AI & DS Field!!</h3>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+  <!-- upskil -->
+
+  <section class="bg-purple-50 py-16 px-4 md:px-10">
+    <div class="max-w-7xl mx-auto text-center mb-10">
+      <h2 class=" text-5xl font-extrabold text-purple-700 leading-tight">
+        Why you want to Upskill in DS and AI?
+      </h2>
+    </div>
+  
+    <!-- Flowbite Carousel Wrapper -->
+    <div id="carousel-cards" class="relative w-full max-w-7xl mx-auto" data-carousel="slide">
+      
+      <!-- Carousel Items -->
+      <div class="relative h-80 overflow-hidden rounded-xl">
+  
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="bg-purple-100/30 backdrop-blur-md border border-purple-200 rounded-xl shadow-md p-6 flex flex-col items-center justify-center text-center h-full">
+            <img src="https://source.unsplash.com/featured/?career,success" class="w-20 h-20 rounded-full border-4 border-white shadow mb-4" alt="Competitive">
+            <p class="text-purple-800 font-medium">To stay competitive in the job market</p>
+          </div>
+        </div>
+  
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="bg-purple-100/30 backdrop-blur-md border border-purple-200 rounded-xl shadow-md p-6 flex flex-col items-center justify-center text-center h-full">
+            <img src="https://source.unsplash.com/featured/?opportunity,career" class="w-20 h-20 rounded-full border-4 border-white shadow mb-4" alt="Opportunities">
+            <p class="text-purple-800 font-medium">To take advantage of new opportunities and career paths</p>
+          </div>
+        </div>
+  
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="bg-purple-100/30 backdrop-blur-md border border-purple-200 rounded-xl shadow-md p-6 flex flex-col items-center justify-center text-center h-full">
+            <img src="https://source.unsplash.com/featured/?money,growth" class="w-20 h-20 rounded-full border-4 border-white shadow mb-4" alt="Earning">
+            <p class="text-purple-800 font-medium">To improve their earning potential</p>
+          </div>
+        </div>
+  
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="bg-purple-100/30 backdrop-blur-md border border-purple-200 rounded-xl shadow-md p-6 flex flex-col items-center justify-center text-center h-full">
+            <img src="https://source.unsplash.com/featured/?analytics,thinking" class="w-20 h-20 rounded-full border-4 border-white shadow mb-4" alt="Skills">
+            <p class="text-purple-800 font-medium">To enhance their problem-solving, analytical, and critical thinking skills</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-1/2 left-0 z-30 -translate-y-1/2 px-4 focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 bg-purple-700/80 text-white rounded-full hover:bg-purple-800">‹</span>
+      </button>
+      <button type="button" class="absolute top-1/2 right-0 z-30 -translate-y-1/2 px-4 focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 bg-purple-700/80 text-white rounded-full hover:bg-purple-800">›</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- job -->
+  <section class="bg-white py-16 px-4 md:px-10">
+    <div class="max-w-6xl mx-auto text-center mb-10 px-2">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-purple-700 leading-tight">
+        Do you know what are the Major 5 Factors that stop you from getting a Dream Job in AI and Data Science field?
+      </h2>
+    </div>
+  
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
+      <!-- Card Template -->
+      <div class="bg-white/20 border border-purple-800 rounded-[10px_60px_30px_10px] p-6 shadow-md backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgba(128,0,128,0.4)]" data-aos="fade-up">
+        <img src="https://source.unsplash.com/featured/?nontechnical,student" alt="Non-Technical" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md">
+        <p class="text-gray-800 font-medium text-base md:text-lg">You may be from a Non-Technical background</p>
+      </div>
+  
+      <div class="bg-white/20 border border-purple-800 rounded-[10px_60px_30px_10px] p-6 shadow-md backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgba(128,0,128,0.4)]" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://source.unsplash.com/featured/?code,confused" alt="Lack of Programming" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md">
+        <p class="text-gray-800 font-medium text-base md:text-lg">You may have lack of programming knowledge</p>
+      </div>
+  
+      <div class="bg-white/20 border border-purple-800 rounded-[10px_60px_30px_10px] p-6 shadow-md backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgba(128,0,128,0.4)]" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://source.unsplash.com/featured/?mentor,ai" alt="Mentors" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md">
+        <p class="text-gray-800 font-medium text-base md:text-lg">You may be facing difficulties to find AI experts and mentors</p>
+      </div>
+  
+      <div class="bg-white/20 border border-purple-800 rounded-[10px_60px_30px_10px] p-6 shadow-md backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgba(128,0,128,0.4)]" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://source.unsplash.com/featured/?communication,skills" alt="Communication" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md">
+        <p class="text-gray-800 font-medium text-base md:text-lg">You may have lack of communication skill</p>
+      </div>
+  
+      <div class="bg-white/20 border border-purple-800 rounded-[10px_60px_30px_10px] p-6 shadow-md backdrop-blur-md transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgba(128,0,128,0.4)]" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://source.unsplash.com/featured/?career,gap" alt="Career Gap" class="w-full h-40 object-cover rounded-lg mb-4 shadow-md">
+        <p class="text-gray-800 font-medium text-base md:text-lg">You may be facing a Career gap over the years</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- vedio1 -->
+ 
+    <section class=" bg-purple-50 py-20 px-4  md:px-10">
+      <div class="max-w-6xl mx-auto text-center mb-10">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-purple-700 leading-snug">
+          Result of overcoming these factors by implementing our<br />
+          <span class="text-black">5-Step Proven Strategies</span>
+        </h2>
+      </div>
+  
+      <!-- Horizontal Scroll Container -->
+      <div class="max-w-6xl mx-auto relative">
+        <div class="overflow-x-auto  flex space-x-6" id="videoItems">
+          <!-- Videos will be injected here -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- step -->
+
+    <section class="bg-white py-16 px-4 md:px-10">
+      <div class="max-w-5xl mx-auto text-center mb-12">
+        <h2 class="text-5xl font-extrabold text-purple-700 leading-tight mb-4 md:text-5xl font-extrabold ">How to get above Results?</h2>
+      </div>
+    
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-10 relative">
+        
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center text-center w-full md:w-1/5 relative">
+          <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-md mb-4">1</div>
+          <p class="text-gray-800 font-semibold">Register for this Workshop</p>
+          <!-- Arrow -->
+          <div class="hidden md:block absolute top-1/2 right-[-32px] transform -translate-y-1/2">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+    
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center text-center w-full md:w-1/5 relative">
+          <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-md mb-4">2</div>
+          <p class="text-gray-800 font-semibold">Attend 3-Hours Live</p>
+          <!-- Arrow -->
+          <div class="hidden md:block absolute top-1/2 right-[-32px] transform -translate-y-1/2">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+    
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center text-center w-full md:w-1/5 relative">
+          <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-md mb-4">3</div>
+          <p class="text-gray-800 font-semibold">Book 1:1 Call with Us</p>
+          <!-- Arrow -->
+          <div class="hidden md:block absolute top-1/2 right-[-32px] transform -translate-y-1/2">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+    
+        <!-- Step 4 -->
+        <div class="flex flex-col items-center text-center w-full md:w-1/5 relative">
+          <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-md mb-4">4</div>
+          <p class="text-gray-800 font-semibold">Get Customised Career Path</p>
+          <!-- Arrow -->
+          <div class="hidden md:block absolute top-1/2 right-[-32px] transform -translate-y-1/2">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+    
+        <!-- Step 5 -->
+        <div class="flex flex-col items-center text-center w-full md:w-1/5">
+          <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-md mb-4">5</div>
+          <p class="text-gray-800 font-semibold">Get Your Desired Result</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- sccess -->
+
+    <section class="bg-purple-50 py-20 px-4    ">
+      <h2 class="text-4xl md:text-5xl text-center font-extrabold text-purple-700">
+         Change Your<span>  Career Like This!</span>
+      </h2>
+    
+      <!-- Carousel Wrapper -->
+      <div class="max-w-7xl mx-auto mt-10">
+        <div class="relative overflow-hidden rounded-2xl shadow-lg">
+          <div class="flex transition-transform duration-700 ease-in-out h-[350px] md:h-[550px]" id="carousel-inner">
+            <img src="./success1.webp" class="w-full md:w-[80vw] flex-shrink-0 " />
+            <img src="./success2.webp" class="w-full md:w-[80vw] flex-shrink-0 " />
+            <img src="./success3.webp" class="w-full md:w-[80vw] flex-shrink-0 " />
+            <img src="./success4.webp" class="w-full md:w-[80vw] flex-shrink-0 " />
+            <img src="./success5.webp" class="w-full md:w-[80vw] flex-shrink-0 " />
+          </div>
+        </div>
+        </div>
+        </section>
+
+
+          <!-- vedio2 -->
+ 
+    <section class=" bg-white py-20 px-4  md:px-10">
+      <div class="max-w-6xl mx-auto text-center mb-10">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-purple-700 leading-snug">
+          Listen to our 
+          <span class="text-black"> Hope AI Graduates</span>
+        </h2>
+      </div>
+  
+      <!-- Horizontal Scroll Container -->
+      <div class="max-w-6xl mx-auto relative">
+        <div class="overflow-x-auto  flex space-x-6" id="videoItems2">
+          <!-- Videos will be injected here -->
+        </div>
+      </div>
+    </section>
+
+
+    
+<!-- Section - 3 Real-Time Project Demos -->
+<section class="bg-purple-50  py-20 px-4  md:px-10">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-purple-700 leading-snug">
+      Learn 3 Real Time  <span >Project Demo</span> in the Webinars 
+    </h2>
+    <p class="text-sm md:text-base text-purple-100 mb-10 italic">
+      (Only for those who attend Webinars)
+    </p>
+
+    <!-- Card Container -->
+    <div class="flex flex-col md:flex-row md:space-x-6 gap-y-8 md:gap-y-0 justify-center items-stretch">
+      
+      <!-- Card 1 -->
+      <div class="bg-white  text-left rounded-2xl shadow-xl p-6 w-full md:w-1/3 mb-4 md:mb-0">
+        <img src="./MachineLearn-1.webp" alt="ML Project" class="w-full h-48 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-bold text-purple-800 mb-2">Machine Learning - 1</h3>
+        <p class="text-gray-800 mb-4">Chronic Kidney Disease Prediction - AI in Health Care</p>
+        <div class="text-sm font-semibold text-gray-700">
+          Value: <span class="text-green-600 font-bold line-through mr-2">₹1997</span> 
+          <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">FREE</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white  text-left rounded-2xl shadow-xl p-6 w-full md:w-1/3 mb-4 md:mb-0">
+        <img src="./pavitra-1.webp" alt="DL Project" class="w-full h-48 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-bold text-purple-800 mb-2">Deep Learning - 2</h3>
+        <p class="text-gray-800 mb-4">AI based CCTV Camera to detect Wild Animals</p>
+        <div class="text-sm font-semibold text-gray-700">
+          Value: <span class="text-green-600 font-bold line-through mr-2">₹3997</span> 
+          <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">FREE</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white  text-left rounded-2xl shadow-xl p-6 w-full md:w-1/3">
+        <img src="./whatsApp-1.webp" alt="NLP Project" class="w-full h-48 object-cover rounded-xl mb-4">
+        <h3 class="text-xl font-bold text-purple-800 mb-2">Natural Language Processing - 3</h3>
+        <p class="text-gray-800 mb-4">Understand how machines interpret human language</p>
+        <div class="text-sm font-semibold text-gray-700">
+          Value: <span class="text-green-600 font-bold line-through mr-2">₹7997</span> 
+          <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">FREE</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="bg-white py-16 px-6 sm:px-12 md:px-24">
+  <div class="max-w-7xl mx-auto text-center mb-12">
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-purple-700 leading-tight mb-4">
+      What will you learn in the workshop <span class="text-purple-600">Additionally?</span>
+    </h2>
+    <p class="text-lg sm:text-xl font-medium text-gray-600">
+      5 Step Proven Framework To Become <span class="text-pink-600 font-semibold">Zero to Hero in AI & DS!!</span>
+    </p>
+  </div>
+
+  <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    
+    <!-- Card 1 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-purple-300 transition-all duration-300">
+      <img src="your-image-path-1.jpg" alt="Customized Career Path" class="w-full h-52 object-cover rounded-xl mb-5">
+      <h3 class="text-xl font-bold text-purple-700 mb-2">Customized Career Path in AI</h3>
+      <p class="text-gray-600">
+        We provide a customized AI career path without disrupting your current job, helping you integrate AI into your domain.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-purple-300 transition-all duration-300">
+      <img src="your-image-path-2.jpg" alt="Effortless Learning Strategy" class="w-full h-52 object-cover rounded-xl mb-5">
+      <h3 class="text-xl font-bold text-purple-700 mb-2">Effortless Learning Strategy</h3>
+      <p class="text-gray-600">
+        Skip the confusion of random content—we provide a clear and proven strategy to learn AI effectively.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-purple-300 transition-all duration-300">
+      <img src="your-image-path-3.jpg" alt="Professional Network" class="w-full h-52 object-cover rounded-xl mb-5">
+      <h3 class="text-xl font-bold text-purple-700 mb-2">Build Professional Network</h3>
+      <p class="text-gray-600">
+        Learn to build a personal brand and a strong professional network to unlock high-paying job opportunities.
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-purple-300 transition-all duration-300">
+      <img src="your-image-path-4.jpg" alt="Placement Assistance" class="w-full h-52 object-cover rounded-xl mb-5">
+      <h3 class="text-xl font-bold text-purple-700 mb-2">Placement Assistant & Resume Prep</h3>
+      <p class="text-gray-600">
+        Get expert placement support and personalized resume building guidance aligned with your AI domain.
+      </p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-purple-300 transition-all duration-300">
+      <img src="your-image-path-5.jpg" alt="Real Time Projects" class="w-full h-52 object-cover rounded-xl mb-5">
+      <h3 class="text-xl font-bold text-purple-700 mb-2">Real Time Project Experience</h3>
+      <p class="text-gray-600">
+        Get mentored through real-time projects with dedicated 1:1 support to help you apply concepts with clarity.
+      </p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-purple-300 transition-all duration-300">
+      <img src="your-image-path-6.jpg" alt="Technical Support" class="w-full h-52 object-cover rounded-xl mb-5">
+      <h3 class="text-xl font-bold text-purple-700 mb-2">24/7 Technical Support</h3>
+      <p class="text-gray-600">
+        Access round-the-clock technical support to solve any doubts or issues during your AI learning journey.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- FAQ Section -->
+<section class="bg-purple-50 py-16 px-6 sm:px-12 md:px-24">
+  <h2 class="text-4xl sm:text-5xl font-extrabold text-purple-700 leading-tight mb-4 text-center">Frequently Asked Questions</h2>
+  <br>
+
+  <div class="space-y-4">
+
+    <!-- FAQ Item -->
+    <details class="group border border-purple-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-purple-800">
+        1) What are the prerequisites to learn AI and Data Science Course?
+        <span class="transition-transform group-open:rotate-180">
+          ⬇️
+        </span>
+      </summary>
+      <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+        There are no prerequisites. Hope AI online classes require zero prior knowledge or exposure to AI or Data Science.
+      </p>
+    </details>
+
+    <details class="group border border-purple-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-purple-800">
+        2) Why should I take up these courses?
+        <span class="transition-transform group-open:rotate-180">
+          ⬇️
+        </span>
+      </summary>
+      <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+        These online courses are convenient and flexible, making them ideal for working professionals, freshers, and AI aspirants looking to start a career in tech.
+      </p>
+    </details>
+
+    <details class="group border border-purple-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-purple-800">
+        3) Who is eligible to learn AI and Data Science?
+        <span class="transition-transform group-open:rotate-180">
+          ⬇️
+        </span>
+      </summary>
+      <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+        Anyone—from freshers to professionals—looking to transition into AI and Data Science is eligible.
+      </p>
+    </details>
+
+    <details class="group border border-purple-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-purple-800">
+        4) How do I access my course?
+        <span class="transition-transform group-open:rotate-180">
+          ⬇️
+        </span>
+      </summary>
+      <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+        Once you complete the payment, you’ll get access to the course through our app from a dedicated mentor.
+      </p>
+    </details>
+
+    <details class="group border border-purple-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-purple-800">
+        5) What will I get after completing these courses?
+        <span class="transition-transform group-open:rotate-180">
+          ⬇️
+        </span>
+      </summary>
+      <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+        You’ll gain hands-on experience and practical skills to solve real-world AI and Data Science problems.
+      </p>
+    </details>
+
+    <details class="group border border-purple-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-purple-800">
+        6) What basic knowledge is necessary?
+        <span class="transition-transform group-open:rotate-180">
+          ⬇️
+        </span>
+      </summary>
+      <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+        Just basic computer literacy and the willingness to learn. No coding or computer science background needed.
+      </p>
+    </details>
+
+    <details class="group border border-purple-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-purple-800">
+        7) I'm not good at math, is this course still for me?
+        <span class="transition-transform group-open:rotate-180">
+          ⬇️
+        </span>
+      </summary>
+      <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+        Yes! You don’t need advanced math to start. The course begins with beginner-friendly content.
+      </p>
+    </details>
+
+    <details class="group border border-purple-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-purple-800">
+        8) What jobs are available after completing this course?
+        <span class="transition-transform group-open:rotate-180">
+          ⬇️
+        </span>
+      </summary>
+      <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+        <strong>Career Options:</strong><br>
+        - Data Scientist<br>
+        - Data Engineer<br>
+        - AI Engineer<br>
+        - Machine Learning Engineer<br>
+        - NLP Engineer<br>
+        - Deep Learning Engineer<br>
+        - Computer Vision Engineer<br>
+        - Business Analyst, and more!
+      </p>
+    </details>
+
+    <details class="group border border-purple-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-purple-800">
+        9) What can I do with my certificate?
+        <span class="transition-transform group-open:rotate-180">
+          ⬇️
+        </span>
+      </summary>
+      <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+        Add it to your resume, LinkedIn, or share with your current employer to showcase your new AI skills.
+      </p>
+    </details>
+
+    <details class="group border border-purple-300 rounded-xl p-4">
+      <summary class="flex justify-between items-center cursor-pointer text-lg font-semibold text-purple-800">
+        10) Is this course really 100% online?
+        <span class="transition-transform group-open:rotate-180">
+          ⬇️
+        </span>
+      </summary>
+      <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+        Yes! The course is fully online. Access classes anytime, anywhere from your mobile or computer.
+      </p>
+    </details>
+
+  </div>
+</section>
+
+     
+    
+  
+  
+  
+  
+
+
+  <script>
+
+const videoList = [
+      './vedio1.mp4',
+      './vedio1.mp4',
+      './vedio1.mp4',
+      './vedio1.mp4',
+      './vedio1.mp4',
+      './vedio1.mp4',
+      './vedio1.mp4',
+      
+    ];
+
+    const container = document.getElementById('videoItems');
+
+    videoList.forEach((videoSrc) => {
+      const div = document.createElement('div');
+      div.className = "flex-shrink-0 w-[300px] h-[600px] rounded-2xl overflow-hidden shadow-md";
+
+      div.innerHTML = `
+        <video 
+
+        width="640" 
+  height="800" 
+  autoplay 
+   
+  muted 
+  
+  controls 
+  poster="your-image.jpg" 
+  preload="auto" 
+  id="videoPlayer"
+        
+        class="w-full h-full object-cover rounded-2xl"  >
+          <source src="${videoSrc}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      `;
+
+      container.appendChild(div);
+    });
+
+    
+const videoList2 = [
+      './vedio1.mp4',
+      './vedio1.mp4',
+      './vedio1.mp4',
+      './vedio1.mp4',
+      './vedio1.mp4',
+      './vedio1.mp4',
+      './vedio1.mp4',
+      
+    ];
+
+    const container2 = document.getElementById('videoItems2');
+
+    videoList2.forEach((videoSrc) => {
+      const div = document.createElement('div');
+      div.className = "flex-shrink-0 w-[300px] h-[600px] rounded-2xl overflow-hidden shadow-md";
+
+      div.innerHTML = `
+        <video 
+
+        width="640" 
+  height="800" 
+  autoplay 
+   
+  muted 
+  
+  controls 
+  poster="your-image.jpg" 
+  preload="auto" 
+  id="videoPlayer"
+        
+        class="w-full h-full object-cover rounded-2xl"  >
+          <source src="${videoSrc}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      `;
+
+      container2.appendChild(div);
+    });
+
+
+    
+    //  carousel
+    const carousel = document.getElementById("carousel-inner");
+    const slides = carousel.children.length;
+    let index = 0;
+
+    function moveSlide(step) {
+      index = (index + step + slides) % slides;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    // Optional Auto-slide
+    setInterval(() => {
+      moveSlide(1);
+    }, 5000);
+
+ 
+
+
+
+    
+
+
+
+  
+ 
+</script>
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <!-- Flowbite CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"></script>
+ 
+</body>
+
+</html>
